@@ -2,14 +2,14 @@
 > PHP Process Locker
 
 ### Example:
-´´´php
+```php
 require_once('pidlock.php');
 $pidlock = new PidLock();
 if (!$pidlock->check()) die('Process working...');
 $pidlock->make();
 sleep(10);
 $pidlock->kill();
-´´´
+```
 
 ## License
 The MIT License (MIT)
